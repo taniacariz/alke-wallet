@@ -1,51 +1,57 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Alke Wallet</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/styles/login.css" />
-
-    <title>Login - Sakura Wallet</title>
   </head>
   <body>
-    <h2>Login</h2>
+    <div class="login-container">
+      <h2>Login</h2>
 
-    <form>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Ingresa tu email"
-          required
-        />
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Ingresa tu contraseña"
-          required
-        />
-      </div>
-      <button type="submit" class="btn btn-primary">Login</button>
-      <button
-        type="button"
-        class="btn btn-secondary"
-        onclick="window.location.href = '/menu'"
-      >
-        Ir al menú principal
-      </button>
-    </form>
+      <form id="login-form">
+        <div class="form-group mb-3">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ingresa tu email"
+            required
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group mb-4">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Ingresa tu contraseña"
+            required
+            class="form-control"
+          />
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn btn-primary">Login</button>
+
+          <a href="/dashboard/menu.html" class="btn btn-secondary">
+            Ir al menú principal
+          </a>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

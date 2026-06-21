@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enviar dinero - Alke Wallet</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/send-money.css" />
+  </head>
+  <body>
+    <div class="send-container">
+      <h2>Enviar dinero</h2>
+
+      <form id="send-form">
+        <div class="search-container">
+          <label for="search-user">Busca un usuario:</label>
+          <input
+            type="text"
+            id="search-user"
+            name="search-user"
+            placeholder="Ingresa el nombre o correo del usuario"
+            required
+          />
+          <button type="button" class="btn btn-primary">
+            Agregar nuevo contacto
+          </button>
+        </div>
+
+        <div class="contact-container">
+          <h2>Contactos</h2>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <div class="contact-name">Vicente Ramos</div>
+              <div class="contact-email">vicente@ejemplo.com</div>
+              <div class="contact-cta">Banco Estado: 123456789</div>
+            </li>
+            <li class="contact-item">
+              <div class="contact-name">Allan Ruiz</div>
+              <div class="contact-email">allan@ejemplo.com</div>
+              <div class="contact-cta">Banco Estado: 987654321</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn btn-primary">Realizar envío</button>
+
+          <a href="/dashboard/menu.html" class="btn btn-primary">
+            Volver al menú principal
+          </a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
