@@ -16,16 +16,30 @@
     <link rel="stylesheet" href="/styles/menu.css" />
   </head>
   <body>
-    <div class="menu-container">
-      <h2>Menú Principal</h2>
+    <div class="card menu-container">
+      <header class="header-menu">
+        <img
+          src="/assets/logo.svg"
+          alt="Alke Wallet"
+          class="logo"
+          width="80"
+          height="80"
+        />
+        <h2>Menú Principal</h2>
+        <p class="description">
+          Gestiona tu dinero de forma simple: deposita, envía o revisa tus
+          últimos movimientos.
+        </p>
+      </header>
 
-      <div class="balance-container mb-4">
-        <span class="balance-title">Dinero en cuenta:</span>
+      <div class="balance-container" aria-label="Saldo de cuenta">
+        <span class="balance-title">Saldo disponible</span>
         <h3 class="balance-amount">$<span id="balance-amount">100000</span></h3>
+        <span class="account-info">Cuenta vista ···4521</span>
       </div>
 
-      <div class="button-group">
-        <a href="/wallet/deposit.html" class="btn btn-primary"> 
+      <div class="actions-group mt-5">
+        <a href="/wallet/deposit.html" class="btn btn-primary">
           Depositar dinero
         </a>
         <a href="/wallet/send-money.html" class="btn btn-primary">
@@ -41,7 +55,7 @@
       const balanceAmount = document.getElementById("balance-amount");
 
       if (!localStorage.getItem("balance")) {
-        localStorage.setItem("balance", balanceAmount.textContent);
+        localStorage.setItem("balance", "100000");
       }
 
       balanceAmount.textContent = localStorage.getItem("balance");

@@ -16,40 +16,56 @@
     <link rel="stylesheet" href="/styles/login.css" />
   </head>
   <body>
-    <div class="login-container">
-      <h2>Login</h2>
+    <div class="card login-container">
+      <header class="header-login">
+        <img
+          src="/assets/logo.svg"
+          alt="Alke Wallet"
+          class="logo"
+          width="150"
+          height="150"
+        />
+        <h2>Iniciar sesión</h2>
+        <p class="description">
+          Bienvenido a tu banco ecológico Alke Wallet, ingresa tu email y
+          contraseña para acceder a tu cuenta
+        </p>
+      </header>
 
       <form id="login-form">
-        <div class="form-group mb-3">
-          <label for="email">Email:</label>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
           <input
             type="email"
             id="email"
+            class="form-control"
             name="email"
             placeholder="Ingresa tu email"
             required
           />
         </div>
 
-        <div class="form-group mb-4">
-          <label for="password">Password:</label>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
           <input
             type="password"
             id="password"
+            class="form-control"
             name="password"
             placeholder="Ingresa tu contraseña"
             required
           />
         </div>
 
-        <div class="button-group">
+        <div class="actions-group mt-5">
           <button id="login-btn" type="submit" class="btn btn-primary">
             Login
           </button>
+          <a href="#" class="forgot-password">Olvide mi contraseña</a>
         </div>
       </form>
     </div>
 
-          <script src="/js/index.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,52 @@
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.menu-container .description {
+  width: 85%;
+}
+
+.balance-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 1.5rem;
+  background: #f3eeeb;
+  border: 1px solid #d4c8c3;
+  border-radius: 0.5rem;
+}
+
+.balance-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #644b4b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.balance-amount {
+  color: #474242;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.account-info {
+  font-size: 0.85rem;
+  color: #644b4b;
+  margin-top: 0.5rem;
+}
